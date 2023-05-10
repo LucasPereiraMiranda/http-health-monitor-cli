@@ -30,7 +30,7 @@ var rootCmd = &cobra.Command{
 	Short: "Check if a URL is responding.",
 	Args:  cobra.ExactArgs(1),
 	Example: `
-  http-health-monitor-cli https://google.com`,
+  http-health-monitor-cli https://www.google.com`,
 	Run: func(cmd *cobra.Command, args []string) {
 		handleCli(args)
 	},
