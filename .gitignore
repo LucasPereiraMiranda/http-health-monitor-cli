@@ -16,3 +16,6 @@
 
 # GoLand idea
 .idea
+
+# compiled file
+http-health-monitor-cli
