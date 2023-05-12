@@ -5,17 +5,29 @@ import (
 	"time"
 )
 
-func CheckURL(url string) (int, time.Duration, bool) {
+func CheckURL(url string) URLStatus {
 	start := time.Now()
 	response, err := http.Get(url)
 
 	if err != nil {
-		return 0, 0, false
+		return URLStatus{
+			StatusCode: 0,
+			Elapsed:    0,
+			IsHealthy:  false,
+			Error:      err,
+		}
 	}
+
 	defer response.Body.Close()
 	elapsed := time.Since(start)
 	isHealthy := IsStatusCodeHealth(response.StatusCode)
-	return response.StatusCode, elapsed, isHealthy
+
+	return URLStatus{
+		StatusCode: response.StatusCode,
+		Elapsed:    elapsed,
+		IsHealthy:  isHealthy,
+		Error:      nil,
+	}
 }
 
 func IsStatusCodeHealth(statusCode int) bool {
