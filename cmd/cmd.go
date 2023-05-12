@@ -14,14 +14,18 @@ func handleCli(args []string) {
 		fmt.Println("Please provide a URL as an argument")
 		return
 	}
-
 	url := args[0]
-	statusCode, responseTime, isHealthy := http.CheckURL(url)
+	urlStatus := http.CheckURL(url)
 
-	if isHealthy {
-		fmt.Printf("The URL (%s) is healthy.\nstatusCode: %d\nResponse time: %s\n", url, statusCode, responseTime)
+	if urlStatus.Error != nil {
+		fmt.Printf("The URL (%s) is not healthy\nError: %s", url, urlStatus.Error)
+		return
+	}
+
+	if urlStatus.IsHealthy {
+		fmt.Printf("The URL (%s) is healthy.\nstatusCode: %d\nResponse time: %s\n", url, urlStatus.StatusCode, urlStatus.Elapsed)
 	} else {
-		fmt.Printf("The URL (%s) is not healthy.\nstatusCode: %d\nResponse time: %s\n", url, statusCode, responseTime)
+		fmt.Printf("The URL (%s) is not healthy.\nstatusCode: %d\nResponse time: %s", url, urlStatus.StatusCode, urlStatus.Elapsed)
 	}
 }
 
