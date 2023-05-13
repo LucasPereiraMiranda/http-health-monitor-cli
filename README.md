@@ -17,6 +17,10 @@
   <a href="https://github.com/LucasPereiraMiranda/http-health-monitor-cli/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/LucasPereiraMiranda/http-health-monitor-cli">
   </a>
+
+  <a href="https://github.com/LucasPereiraMiranda/http-health-monitor-cli/issues">
+    <img alt="GitHub license" src="https://img.shields.io/github/license/LucasPereiraMiranda/http-health-monitor-cli">
+  </a>
 </p>
 
 <br>
