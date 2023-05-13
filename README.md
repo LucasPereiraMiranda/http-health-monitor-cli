@@ -31,3 +31,17 @@ Http health monitor cli app was developed with these technologies
 ## 💻 Project
 
 This project is being developed to learn the basics of the Go programming language. It is intended to learn about the Cobra package and other command-line interface (CLI) operations.
+
+### Execution preview
+
+Healthy url
+
+<h1 align="center">
+    <img alt="Success" title="#success" src=".github/images/success.png" />
+</h1>
+
+Connection refused url
+
+<h1 align="center">
+    <img alt="Success" title="#success" src=".github/images/connection-refused.png" />
+</h1>
