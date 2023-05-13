@@ -45,3 +45,21 @@ Connection refused url
 <h1 align="center">
     <img alt="Success" title="#success" src=".github/images/connection-refused.png" />
 </h1>
+
+## :boom: Installation
+
+```bash
+# clone this repo
+$ git clone git@github.com:LucasPereiraMiranda/http-health-monitor-cli.git
+
+# get dependencies in go module
+$ go get
+
+
+# compile main.go as http-health-monitor-cli with
+$ go build -o http-health-monitor-cli main.go
+
+# execute cli tool with
+$ ./http-health-monitor-cli http://google.com.br
+
+```
