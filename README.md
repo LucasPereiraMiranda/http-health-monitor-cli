@@ -20,3 +20,10 @@
 </p>
 
 <br>
+
+## 🚀 Techs
+
+Http health monitor cli app was developed with these technologies
+
+- [Go](https://go.dev/)
+- [Cobra CLI](https://cobra.dev/)
