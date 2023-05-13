@@ -27,3 +27,7 @@ Http health monitor cli app was developed with these technologies
 
 - [Go](https://go.dev/)
 - [Cobra CLI](https://cobra.dev/)
+
+## 💻 Project
+
+This project is being developed to learn the basics of the Go programming language. It is intended to learn about the Cobra package and other command-line interface (CLI) operations.
