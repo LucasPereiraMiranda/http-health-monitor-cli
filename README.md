@@ -1,6 +1,6 @@
 <h1 align="center">
   <br/>
-  http-health-monitor-cli
+  http health monitor cli
 </h1>
 
 <p align="center">
