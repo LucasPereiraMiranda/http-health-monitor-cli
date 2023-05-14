@@ -1,4 +1,4 @@
-package cmd
+package cli
 
 import (
 	"fmt"
@@ -34,7 +34,7 @@ var rootCmd = &cobra.Command{
 	Short: "Check if a URL is responding.",
 	Args:  cobra.ExactArgs(1),
 	Example: `
-  http-health-monitor-cli https://www.google.com`,
+  http-health-monitor-cli http://www.google.com`,
 	Run: func(cmd *cobra.Command, args []string) {
 		handleCli(args)
 	},
