@@ -45,7 +45,13 @@ Healthy url
 Connection refused url
 
 <h1 align="center">
-    <img alt="Success" title="#success" src=".github/images/connection-refused.png" />
+    <img alt="Connection refused" title="#connection-refused" src=".github/images/connection-refused.png" />
+</h1>
+
+Help command
+
+<h1 align="center">
+    <img alt="Help" title="#help" src=".github/images/help.png" />
 </h1>
 
 ## :boom: Installation
